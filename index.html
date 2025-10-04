@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡FIRMA YA! Queremos recibir clase, no huelgas.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Carga de Font Awesome v6.4.2 desde cdnjs para iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" xintegrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKx3G3v3BzaV46+rYgbBqQyCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon (simple SVG data URI) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231800ad'/%3E%3Ctext x='50' y='55' font-size='50' text-anchor='middle' fill='white' font-family='Inter, Arial, sans-serif'%3E¡%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+    <!-- SEO: descripción, robots y viewport refinado -->
+    <meta name="description" content="Firma para exigir clases ininterrumpidas y reducir la pérdida de horas lectivas por huelgas. Infórmate y comparte la petición para mantener la calidad educativa.">
+    <meta name="keywords" content="clases, huelga, educación, petición, estudiantes, rendimiento académico, firmas">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Inled Group">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="¡FIRMA YA! Queremos recibir clase, no huelgas.">
+    <meta property="og:description" content="Firma para exigir clases ininterrumpidas y reducir la pérdida de horas lectivas por huelgas. Infórmate y comparte la petición.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=FIRMA+YA">
+    <meta property="og:image:alt" content="Imagen de petición - Firma YA">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="¡FIRMA YA! Queremos recibir clase, no huelgas.">
+    <meta name="twitter:description" content="Firma para exigir clases ininterrumpidas y reducir la pérdida de horas lectivas por huelgas.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=FIRMA+YA">
+
+    <!-- Canonical dinámico: se calculará en tiempo de ejecución para evitar duplicados -->
+    <link rel="canonical" href="">
+
+    <style>
+        /* Variables y configuración base */
+        :root {
+            --main-color: #1800ad; /* Deep Indigo */
+            --background-color: #f7f7f9;
+            --text-color: #333;
+            --shadow-light: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-strong: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Utilidades de Diseño */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        .main-color-bg {
+            background-color: var(--main-color);
+        }
+        .main-color-text {
+            color: var(--main-color);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .rounded-xl {
+            border-radius: 1rem; /* 16px */
+        }
+
+        /* Estilos del Encabezado */
+        header {
+            background-color: var(--main-color);
+            color: white;
+            box-shadow: var(--shadow-light);
+            padding: 40px 0;
+        }
+        header h1 {
+            font-size: 2.25rem; /* text-3xl */
+            font-weight: 800; /* font-extrabold */
+        }
+        header p {
+            font-size: 1.25rem; /* text-xl */
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
+        /* Estilos del Contenido Principal */
+        main {
+            flex-grow: 1;
+            padding: 48px 0;
+        }
+        section {
+            padding: 32px;
+            background-color: white;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 48px;
+            border-radius: 1rem;
+        }
+        .intro-section {
+            border-top: 4px solid var(--main-color);
+            box-shadow: var(--shadow-strong);
+        }
+        section h2 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        /* Contenedor de Bloques (Responsive Grid) */
+        .grid-container {
+            display: grid;
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .card {
+            padding: 24px;
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-light);
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: var(--shadow-strong);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .card-header svg {
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+        }
+        .card-header h3 {
+            font-size: 1.125rem; /* text-xl */
+            font-weight: 600;
+            color: #1f2937; /* Gray-800 */
+        }
+        
+        /* Lista de Puntos Clave */
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 1rem;
+        }
+
+        /* --- SECCIÓN DE COMPARTIR (NUEVA) --- */
+        .share-section {
+            text-align: center;
+            padding: 24px 16px;
+            background-color: white;
+            border-radius: 1rem;
+            margin-bottom: 48px;
+            box-shadow: var(--shadow-light);
+        }
+        .share-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .share-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: white;
+            font-size: 0.75rem;
+            line-height: 1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .share-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        /* Ajuste para los iconos de Font Awesome (etiqueta i) */
+        .share-button i {
+            font-size: 24px; /* Tamaño del icono */
+            margin-bottom: 4px;
+        }
+        
+        /* Colores Específicos */
+        .share-whatsapp { background-color: #25D366; }
+        .share-telegram { background-color: #0088CC; }
+        .share-twitter { background-color: #1DA1F2; }
+        .share-facebook { background-color: #1877F2; }
+        .share-email { background-color: #EA4335; }
+        .share-copy { background-color: var(--main-color); }
+
+        /* Mensaje de Copiado */
+        #copy-message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 1000;
+        }
+
+        /* Sección de Petición */
+        .petition-section {
+            text-align: center;
+            padding: 40px;
+            background-color: var(--main-color);
+            color: white;
+            margin-bottom: 48px;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-strong);
+        }
+        .petition-section h2 {
+            color: white;
+            font-size: 1.875rem; /* text-3xl */
+            margin-bottom: 1.5rem;
+        }
+        .petition-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--main-color);
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 9999px; /* full rounded */
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+            font-size: 1.125rem;
+            margin-top: 16px;
+        }
+        .petition-button:hover {
+            background-color: #e0e0e0;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Estilos del Pie de Página */
+        footer {
+            background-color: var(--main-color);
+            color: white;
+            padding: 16px 0;
+            text-align: center;
+            font-size: 0.875rem; /* text-sm */
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;" onfocus="this.style.left='16px';this.style.top='16px';this.style.width='auto';this.style.height='auto';">Saltar al contenido</a>
+
+    <!-- Mensaje de Copiado (Invisible por defecto) -->
+    <div id="copy-message">¡Enlace copiado al portapapeles!</div>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <div class="container">
+            <h1 class="text-shadow">
+                El problema de las huelgas continuadas
+            </h1>
+            <p>
+                Queremos recibir clase, no huelgas.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main id="main-content" role="main">
+        <div class="container">
+
+            <!-- Introducción -->
+            <section class="intro-section">
+                <h2 class="main-color-text">
+                    La Ecuación de la Pérdida de Tiempo
+                </h2>
+                <p style="color: #4a5568;">
+                    Las jornadas de huelga, si bien son un mecanismo de reivindicación legítimo, tienen una consecuencia directa e ineludible en el calendario académico: la <strong>pérdida de horas lectivas</strong>. Este tiempo no se desvanece; simplemente se convierte en una deuda que, al acercarse las fechas de evaluación, debe pagarse con prisas y superficialidad, comprometiendo seriamente la calidad del aprendizaje y la preparación del estudiante.
+                </p>
+            </section>
+            
+            <!-- SECCIÓN DE BOTONES DE COMPARTIR -->
+            <section class="share-section">
+                <h2 style="font-size: 1.25rem; margin-bottom: 0;">¡Comparte esta iniciativa!</h2>
+                <div class="share-buttons">
+                    
+                    <a href="#" id="share-whatsapp" class="share-button share-whatsapp" target="_blank" title="Compartir en WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    
+                    <a href="#" id="share-telegram" class="share-button share-telegram" target="_blank" title="Compartir en Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                        Telegram
+                    </a>
+                    
+                    <a href="#" id="share-twitter" class="share-button share-twitter" target="_blank" title="Compartir en Twitter (X)">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                    
+                    <a href="#" id="share-facebook" class="share-button share-facebook" target="_blank" title="Compartir en Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                    
+                    <a href="#" id="share-email" class="share-button share-email" target="_blank" title="Compartir por Correo Electrónico">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                    
+                    <button id="share-copy" class="share-button share-copy" title="Copiar Enlace">
+                        <i class="fas fa-copy"></i>
+                        Enlace
+                    </button>
+
+                </div>
+            </section>
+
+
+            <!-- Bloques 1 y 2: Pérdida y Aceleración -->
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-header">
+                        <svg class="main-color-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3>1. La Clase Perdida es Irrecuperable</h3>
+                    </div>
+                    <p style="color: #4a5568;">
+                        Una clase no es solo transmisión de información, sino <strong>interacción, discusión y resolución de dudas</strong> en tiempo real. Cuando una huelga cancela estas sesiones de forma continua, no solo se retrasa el temario, sino que se pierde la oportunidad de consolidar conceptos clave. El material puede ser leído, pero la experiencia pedagógica queda truncada.
+                    </p>
+                </div>
+                
+                <!-- Bloque 2: La Aceleración y el Relleno -->
+                <div class="card">
+                    <div class="card-header">
+                        <svg class="main-color-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3>2. Contenido Acelerado y Superficial</h3>
+                    </div>
+                    <p style="color: #4a5568;">
+                        A medida que se acerca la fecha del examen, los docentes se ven forzados a comprimir semanas de currículo en pocos días. Esto se traduce en clases magistrales apresuradas, con <strong>menos ejemplos, menos ejercicios y poco tiempo para la asimilación</strong>. El objetivo pasa de ser el <strong>aprendizaje profundo</strong> a ser el <strong>'relleno' de temario</strong> antes de la evaluación.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bloque 3: Impacto Directo en la Preparación para Exámenes -->
+            <section>
+                <div class="card-header" style="margin-bottom: 16px; padding: 0;">
+                    <svg class="main-color-text" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px; margin-right: 16px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+                    <h2 style="margin: 0; font-size: 1.5rem;">
+                        3. El Estrés y el Mal Rendimiento
+                    </h2>
+                </div>
+                
+                <ul style="color: #4a5568;">
+                    <li>
+                        <strong class="main-color-text">Estudio por Obligación, no por Comprensión:</strong> El estudiante debe auto-estudiar material no explicado o mal explicado, resultando en un aprendizaje memorístico a corto plazo.
+                    </li>
+                    <li>
+                        <strong class="main-color-text">Ausencia de Práctica Crítica:</strong> La falta de tiempo elimina los simulacros de examen y los ejercicios que permiten aplicar el conocimiento, dejando al estudiante vulnerable ante preguntas complejas.
+                    </li>
+                    <li>
+                        <strong class="main-color-text">Ansiedad Pre-Examen:</strong> La sensación de no haber cubierto todo el material a profundidad o de haberlo visto demasiado rápido incrementa el estrés y la ansiedad, factores que históricamente reducen el rendimiento académico.
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- SECCIÓN DE PETICIÓN -->
+            <section class="petition-section">
+                <h2 class="text-shadow">
+                    ¿Quieres clases ininterrumpidas?
+                </h2>
+                <p>
+                    Si crees que es crucial mantener el ritmo académico y evitar las prisas por dar el temario antes de los exámenes, puedes unirte a nuestra petición para que se siga dando temario durante los días de huelga.
+                </p>
+                <a href="https://forms.wps.com/w/write/eu/Riza0vnH/" target="_blank" class="petition-button">
+                    ¡Firma Aquí para Seguir con las Clases!
+                </a>
+            </section>
+
+            <!-- Conclusión y Llamada a la Reflexión -->
+            <section class="main-color-bg" style="color: white; box-shadow: var(--shadow-strong);">
+                <h2 class="text-shadow" style="color: white;">
+                    Conclusión: Un Equilibrio Necesario
+                </h2>
+                <p style="color: white; opacity: 0.9;">
+                    Es fundamental encontrar un equilibrio que respete el derecho a la protesta sin sacrificar el derecho a una <strong>educación efectiva y a un ritmo sostenible</strong>. La recurrencia de las huelgas traslada una carga desproporcionada de responsabilidad al estudiante, obligándolo a suplir la falta de estructura curricular, lo que, en última instancia, lo lleva a presentarse a los exámenes con una preparación <strong>apresurada</strong> e <strong>insuficiente</strong>.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="main-color-bg">
+        <div class="container">
+            <p>Desarrollado por Inled Group para Delegados1B Bach Puga. Licenciado bajo GNU GPLv3.0.</p>
+        </div>
+    </footer>
+
+    <!-- Script de Compartición -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Obtener la URL y el texto a compartir
+            const currentUrl = encodeURIComponent(window.location.href);
+            const titleText = encodeURIComponent(document.title);
+            const shareMessage = encodeURIComponent("¡Echa un vistazo a este análisis sobre el impacto de las huelgas en el rendimiento académico! #EducaciónSinPausas");
+
+            // 2. Definir los enlaces de compartición
+            const shareLinks = {
+                'share-whatsapp': `https://api.whatsapp.com/send?text=${shareMessage} ${currentUrl}`,
+                'share-telegram': `https://t.me/share/url?url=${currentUrl}&text=${shareMessage}`,
+                'share-twitter': `https://twitter.com/intent/tweet?text=${shareMessage}&url=${currentUrl}`,
+                'share-facebook': `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`,
+                'share-email': `mailto:?subject=${titleText}&body=${shareMessage}%0A%0A${currentUrl}`
+            };
+
+            // 3. Asignar los enlaces a los botones
+            for (const id in shareLinks) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.href = shareLinks[id];
+                }
+            }
+
+            // 4. Lógica para copiar el enlace (Botón "Enlace")
+            const copyButton = document.getElementById('share-copy');
+            const copyMessage = document.getElementById('copy-message');
+
+            copyButton.addEventListener('click', () => {
+                const urlToCopy = window.location.href;
+
+                // Intenta usar la API moderna de portapapeles
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(urlToCopy).then(() => {
+                        showCopyMessage();
+                    }).catch(err => {
+                        console.error('Error al copiar (clipboard API):', err);
+                        fallbackCopyTextToClipboard(urlToCopy);
+                    });
+                } else {
+                    // Fallback para navegadores antiguos o entornos restringidos
+                    fallbackCopyTextToClipboard(urlToCopy);
+                }
+            });
+
+            function fallbackCopyTextToClipboard(text) {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.position = "fixed";  // Evitar que el teclado virtual se abra en móvil
+                textArea.style.opacity = 0;
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+
+                try {
+                    const successful = document.execCommand('copy');
+                    if (successful) {
+                        showCopyMessage();
+                    } else {
+                        console.error('Fallo al copiar con execCommand');
+                    }
+                } catch (err) {
+                    console.error('Error final al copiar:', err);
+                }
+                document.body.removeChild(textArea);
+            }
+
+            function showCopyMessage() {
+                copyMessage.style.opacity = 1;
+                setTimeout(() => {
+                    copyMessage.style.opacity = 0;
+                }, 2000);
+            }
+        });
+    </script>
+
+        <!-- JSON-LD estructurado para SEO -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "#website",
+                    "url": "",
+                    "name": "¡FIRMA YA! Queremos recibir clase, no huelgas.",
+                    "inLanguage": "es"
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "#webpage",
+                    "url": "",
+                    "name": "¡FIRMA YA! Queremos recibir clase, no huelgas.",
+                    "isPartOf": {"@id": "#website"},
+                    "inLanguage": "es",
+                    "description": "Firma para exigir clases ininterrumpidas y reducir la pérdida de horas lectivas por huelgas."
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "#organization",
+                    "name": "Inled Group",
+                    "url": "",
+                    "logo": "https://via.placeholder.com/300x80.png?text=Inled+Group"
+                }
+            ]
+        }
+        </script>
+
+        <!-- Script para poblar canonical, OpenGraph url y JSON-LD dinámicamente -->
+        <script>
+            (function() {
+                try {
+                    var canonical = document.querySelector('link[rel="canonical"]');
+                    var loc = window.location.origin + window.location.pathname;
+                    if (canonical && !canonical.href) canonical.href = loc;
+
+                    // Actualizar meta og:url y json-ld url fields
+                    var ogUrl = document.querySelector('meta[property="og:url"]');
+                    if (!ogUrl) {
+                        ogUrl = document.createElement('meta');
+                        ogUrl.setAttribute('property','og:url');
+                        document.head.appendChild(ogUrl);
+                    }
+                    ogUrl.setAttribute('content', loc);
+
+                    // Rellenar JSON-LD url placeholders
+                    var ld = document.querySelector('script[type="application/ld+json"]');
+                    if (ld) {
+                        try {
+                            var obj = JSON.parse(ld.textContent);
+                            obj['@graph'] && obj['@graph'].forEach(function(node){
+                                if (node.url === "") node.url = loc;
+                            });
+                            ld.textContent = JSON.stringify(obj);
+                        } catch(e) {
+                            // noop
+                        }
+                    }
+                } catch (e) {
+                    console.warn('SEO helper script error', e);
+                }
+            })();
+        </script>
+
+</body>
+</html>
